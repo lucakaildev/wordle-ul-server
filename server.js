@@ -12,7 +12,7 @@ mongoose.connect("mongodb+srv://lucakail:theevilz4204@cluster0.c0gud.mongodb.net
 server.use(express.json());
 
 server.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "https://wordleunlimited-byluca.web.app/");
+    res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Credentials", "true");
     res.header(
         "Access-Control-Allow-Headers",
